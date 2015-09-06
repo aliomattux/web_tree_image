@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
     <img t-name="ListView.row.image"
-         t-att-height="widget.height || 16"
-         t-att-src="src" />
+	t-att-style="widget.style"
+        t-att-src="src" />
+<t t-name="FieldBinaryImage-img">
+    <img t-att-style="widget.node.attrs.style" />
+</t>
 </templates>
